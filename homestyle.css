@@ -1,0 +1,98 @@
+/* Define the background image and styles */
+body {
+    background-image: url('https://images.hindustantimes.com/img/2021/12/30/1600x900/abhishek-prasad-N3VzleBhOvk-unsplash_1628499374705_1640865003723.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  header {
+    
+    padding: 1rem;
+    text-align: center;
+     
+  }
+  
+  /* Style the caption */
+  nav {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: crimson;
+  }
+  
+  header h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  header h2 {
+    font-size: 10px;
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .caption {
+    font-size: 36px;
+    color: #000080;
+    text-align: left; /* Adjust text alignment */
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust the position to the left */
+    transform: translate(-50%, -50%);
+    animation: moveCaption 5s linear infinite alternate; /* Adjust animation duration and timing as needed */
+  }
+  
+  /* Define the animation keyframes for the moving caption */
+  @keyframes moveCaption {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-20px); /* Adjust the distance you want the caption to move */
+    }
+  }
+  
+  footer {
+    
+    color: #fff;
+    text-align: center;
+    padding: 5px; /* Add some padding to the footer */
+    height: 30px; /* Adjust the height as needed */
+    width: 100%;
+  }
+  
